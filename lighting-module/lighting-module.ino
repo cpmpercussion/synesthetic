@@ -22,7 +22,7 @@ const unsigned int localPort = 8888;
 boolean online = false;
 byte mac[] = {  
   0xDE, 0xAD, 0xBE, 0xEF, 0xFE, 0xED };
-IPAddress ip(128, 32, 122, 252);
+IPAddress ip(192, 168, 1, 100);
 
 // sets a light to a specific RGB (and dimness) level.
 // Communicates in Thomann 5-channel DMX format (R, G, B, Strobe, Dim)
