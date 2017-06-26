@@ -25,7 +25,7 @@ byte mac[] = {
 IPAddress ip(192, 168, 1, 100);
 
 // sets a light to a specific RGB (and dimness) level.
-// Communicates in Thomann 5-channel DMX format (R, G, B, Strobe, Dim)
+// Communicates in Thomann 5-channel DMX format (R, G, B, Dim, Strobe)
 void setLightToRGB(int light, int red, int green, int blue, int dim) {
   dmx_master.setChannelValue(light, red); // red
   dmx_master.setChannelValue(light + 1, green); // green
@@ -81,18 +81,18 @@ void light(OSCMessage &msg) {
   int dim = msg.getInt(3);
   setLightToRGB(LIGHT_ONE, red, green, blue, dim);
   // Put LCD status on screen.
-  lcd.clear();
-  lcd.setCursor(0,0);
-  lcd.print("R:");
-  lcd.print(red);
-  lcd.setCursor(9,0);
-  lcd.print("G:");
-  lcd.print(green);
-  lcd.setCursor(0,1);
-  lcd.print("B:");
-  lcd.print(blue);
-  lcd.setCursor(9,1);
-  lcd.print("D:");
-  lcd.print(dim);
+  // lcd.clear();
+  // lcd.setCursor(0,0);
+  // lcd.print("R:");
+  // lcd.print(red);
+  // lcd.setCursor(9,0);
+  // lcd.print("G:");
+  // lcd.print(green);
+  // lcd.setCursor(0,1);
+  // lcd.print("B:");
+  // lcd.print(blue);
+  // lcd.setCursor(9,1);
+  // lcd.print("D:");
+  // lcd.print(dim);
 }
 

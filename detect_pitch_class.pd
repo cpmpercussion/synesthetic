@@ -1,6 +1,6 @@
 #N canvas 71 106 783 292 10;
 #X obj 90 52 inlet, f 10;
-#X obj 93 102 % 12;
+#X obj 93 96 % 12;
 #X obj 93 127 i;
 #X obj 93 151 select 0 1 2 3 4 5 6 7 8 9 10 11;
 #X obj 97 224 outlet;
@@ -16,8 +16,13 @@
 #X obj 542 222 outlet;
 #X obj 588 222 outlet;
 #X text 315 266 pitch class output;
-#X connect 0 0 1 0;
+#X floatatom 214 66 5 0 0 0 - - -, f 5;
+#X floatatom 226 118 5 0 0 0 - - -, f 5;
+#X obj 265 66 + 0.2;
+#X connect 0 0 17 0;
+#X connect 0 0 19 0;
 #X connect 1 0 2 0;
+#X connect 1 0 18 0;
 #X connect 2 0 3 0;
 #X connect 3 0 4 0;
 #X connect 3 1 5 0;
@@ -31,3 +36,4 @@
 #X connect 3 9 13 0;
 #X connect 3 10 14 0;
 #X connect 3 11 15 0;
+#X connect 19 0 1 0;

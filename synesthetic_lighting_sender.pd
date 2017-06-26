@@ -4,13 +4,13 @@
 #X obj 490 164 list prepend send;
 #X obj 490 189 list trim;
 #X obj 40 27 vsl 40 128 0 255 0 0 empty red red 0 -9 0 10 -258113 -1
--262144 4980 1;
+-262144 0 1;
 #X obj 87 27 vsl 40 128 0 255 0 0 empty green green 0 -9 0 10 -4034
--1 -262144 4980 1;
+-1 -262144 5578 1;
 #X obj 134 27 vsl 40 128 0 255 0 0 empty blue blue 0 -9 0 10 -4160
--1 -262144 4980 1;
+-1 -262144 1033 1;
 #X obj 181 27 vsl 40 128 0 255 0 0 empty dim dim 0 -9 0 10 -262144
--1 -262144 478 1;
+-1 -262144 5209 1;
 #X msg 498 214 connect 192.168.1.100 8888;
 #X obj 398 19 loadbang;
 #X msg 398 43 255, f 4;
@@ -78,22 +78,28 @@
 #X obj 842 238 loadbang;
 #X obj 597 243 loadbang;
 #X obj 489 86 spigot;
-#X obj 560 42 tgl 75 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 560 42 tgl 75 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 500 57 loadbang;
 #X obj 729 87 spigot;
-#X obj 800 43 tgl 75 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 800 43 tgl 75 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 740 58 loadbang;
 #X obj 77 223 s light_messages;
 #X obj 730 16 r light_messages;
 #X obj 486 18 r light_messages;
+#X floatatom 98 171 5 0 0 0 - - -, f 5;
+#X floatatom 138 171 5 0 0 0 - - -, f 5;
+#X floatatom 44 172 5 0 0 0 - - -, f 5;
 #X connect 0 0 1 0;
 #X connect 2 0 3 0;
 #X connect 3 0 1 0;
 #X connect 4 0 15 0;
+#X connect 4 0 42 0;
 #X connect 5 0 15 1;
+#X connect 5 0 40 0;
 #X connect 6 0 15 2;
+#X connect 6 0 41 0;
 #X connect 7 0 15 3;
 #X connect 8 0 1 0;
 #X connect 9 0 10 0;
