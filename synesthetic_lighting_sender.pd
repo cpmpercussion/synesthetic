@@ -1,8 +1,8 @@
-#N canvas 174 105 580 439 10;
-#X msg 85 366 disconnect;
-#X obj 77 393 netsend -u -b;
-#X obj 78 292 list prepend send;
-#X obj 78 317 list trim;
+#N canvas 527 193 957 292 10;
+#X msg 497 238 disconnect;
+#X obj 489 265 netsend -u -b;
+#X obj 490 164 list prepend send;
+#X obj 490 189 list trim;
 #X obj 40 27 vsl 40 128 0 255 0 0 empty red red 0 -9 0 10 -258113 -1
 -262144 0 1;
 #X obj 87 27 vsl 40 128 0 255 0 0 empty green green 0 -9 0 10 -4034
@@ -11,13 +11,13 @@
 -1 -262144 0 1;
 #X obj 181 27 vsl 40 128 0 255 0 0 empty dim dim 0 -9 0 10 -262144
 -1 -262144 12700 1;
-#X msg 86 342 connect 192.168.1.100 8888;
-#X obj 391 269 loadbang;
-#X msg 391 293 255, f 4;
-#X obj 296 286 metro 10;
-#X obj 294 311 s send_light;
-#X obj 294 262 loadbang;
-#X obj 78 258 oscformat -f iiii /light;
+#X msg 498 214 connect 192.168.1.100 8888;
+#X obj 398 19 loadbang;
+#X msg 398 43 255, f 4;
+#X obj 308 45 metro 10;
+#X obj 306 70 s send_light;
+#X obj 306 21 loadbang;
+#X obj 490 130 oscformat -f iiii /light;
 #N canvas 932 333 450 300 light_packer 0;
 #X obj 104 108 t f b;
 #X obj 153 107 t f b;
@@ -62,7 +62,32 @@
 #X connect 17 0 2 0;
 #X connect 18 0 9 0;
 #X restore 77 200 pd light_packer;
-#X obj 391 318 s dim;
+#X obj 398 68 s dim;
+#X msg 497 238 disconnect;
+#X obj 489 265 netsend -u -b;
+#X obj 490 164 list prepend send;
+#X obj 490 189 list trim;
+#X msg 498 214 connect 192.168.1.100 8888;
+#X obj 490 130 oscformat -f iiii /light;
+#X msg 736 235 disconnect;
+#X obj 728 262 netsend -u -b;
+#X obj 729 161 list prepend send;
+#X obj 729 186 list trim;
+#X msg 737 211 connect 192.168.1.9 8888;
+#X obj 729 127 oscformat -f iiii /pixel;
+#X obj 842 238 loadbang;
+#X obj 597 243 loadbang;
+#X obj 489 86 spigot;
+#X obj 560 42 tgl 75 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 500 57 loadbang;
+#X obj 729 87 spigot;
+#X obj 800 43 tgl 75 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 740 58 loadbang;
+#X obj 77 223 s light_messages;
+#X obj 730 16 r light_messages;
+#X obj 486 18 r light_messages;
 #X connect 0 0 1 0;
 #X connect 2 0 3 0;
 #X connect 3 0 1 0;
@@ -76,4 +101,24 @@
 #X connect 11 0 12 0;
 #X connect 13 0 11 0;
 #X connect 14 0 2 0;
-#X connect 15 0 14 0;
+#X connect 15 0 37 0;
+#X connect 17 0 18 0;
+#X connect 19 0 20 0;
+#X connect 20 0 18 0;
+#X connect 21 0 18 0;
+#X connect 22 0 19 0;
+#X connect 23 0 24 0;
+#X connect 25 0 26 0;
+#X connect 26 0 24 0;
+#X connect 27 0 24 0;
+#X connect 28 0 25 0;
+#X connect 29 0 27 0;
+#X connect 30 0 21 0;
+#X connect 31 0 22 0;
+#X connect 32 0 31 1;
+#X connect 33 0 32 0;
+#X connect 34 0 28 0;
+#X connect 35 0 34 1;
+#X connect 36 0 35 0;
+#X connect 38 0 34 0;
+#X connect 39 0 31 0;
