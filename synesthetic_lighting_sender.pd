@@ -1,16 +1,16 @@
-#N canvas 527 193 957 292 10;
+#N canvas 40 454 957 292 10;
 #X msg 497 238 disconnect;
 #X obj 489 265 netsend -u -b;
 #X obj 490 164 list prepend send;
 #X obj 490 189 list trim;
 #X obj 40 27 vsl 40 128 0 255 0 0 empty red red 0 -9 0 10 -258113 -1
--262144 0 1;
+-262144 4980 1;
 #X obj 87 27 vsl 40 128 0 255 0 0 empty green green 0 -9 0 10 -4034
--1 -262144 0 1;
+-1 -262144 4980 1;
 #X obj 134 27 vsl 40 128 0 255 0 0 empty blue blue 0 -9 0 10 -4160
--1 -262144 0 1;
+-1 -262144 4980 1;
 #X obj 181 27 vsl 40 128 0 255 0 0 empty dim dim 0 -9 0 10 -262144
--1 -262144 12700 1;
+-1 -262144 478 1;
 #X msg 498 214 connect 192.168.1.100 8888;
 #X obj 398 19 loadbang;
 #X msg 398 43 255, f 4;
