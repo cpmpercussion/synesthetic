@@ -1,0 +1,142 @@
+0 tone 0;
+0 dynamics 30;
+
+3500 tone 9;
+
+3500 tone 7;
+
+3500 tone 4;
+
+3500 tone 5;
+
+1500 tone 7;
+
+1500 tone 9;
+
+3500 tone 0;
+0 dynamics 20;
+
+6000 tone 2;
+0 dynamics 25;
+
+1500 tone 4;
+0 dynamics 30;
+
+1500 tone 5;
+0 dynamics 35;
+
+3500 tone 2;
+0 dynamics 50;
+
+3500 tone 0;
+0 dynamics 40;
+
+1500 tone 10;
+0 dynamics 30;
+
+1500 tone 9;
+0 dynamics 25;
+
+3500 tone 1;
+0 dynamics 20;
+
+3500 tone 9;
+0 dynamics 30;
+
+1500 tone 1;
+0 dynamics 35;
+
+1500 tone 6;
+0 dynamics 40;
+
+3500 tone 3;
+0 dynamics 50;
+1500 dynamics 45;
+1500 dynamics 35;
+1500 dynamics 30;
+
+1500 tone 8;
+0 dynamics 20;
+
+1500 dynamics 15;
+1500 dynamics 10;
+1500 dynamics 5;
+1500 dynamics 0;
+
+6000 dynamics 30;
+0 tone 11;
+
+3500 tone 0;
+
+3500 tone 11;
+
+3500 tone 7;
+
+3500 tone 9;
+
+3500 tone 4;
+
+1500 tone 9;
+
+1500 tone 5;
+
+3500 tone 0;
+
+3500 tone 2;
+
+3500 tone 7;
+
+3500 tone 10;
+
+3500 tone 6;
+
+3500 tone 8;
+
+3500 tone 3;
+
+3500 tone 6;
+
+3500 tone 1;
+
+3500 tone 3;
+1500 dynamics 15;
+1500 dynamics 10;
+1500 dynamics 5;
+1500 dynamics 0;
+
+6000 tone 0;
+0 dynamics 30;
+
+3500 tone 7;
+
+3500 tone 2;
+
+1500 tone 6;
+
+1500 tone 9;
+
+3500 tone 4;
+
+3500 tone 11;
+
+3500 tone 6;
+
+3500 tone 1;
+
+3500 tone 8;
+
+1500 tone 5;
+
+1500 tone 3;
+
+3500 tone 10;
+
+3500 tone 5;
+
+3500 tone 0;
+
+6000 tone 11;
+3500 dynamics 15;
+3500 dynamics 10;
+3500 dynamics 5;
+3500 dynamics 0;
