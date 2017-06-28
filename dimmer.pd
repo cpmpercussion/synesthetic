@@ -1,0 +1,27 @@
+#N canvas 209 272 450 300 10;
+#X obj 71 65 r dim;
+#X obj 51 94 f;
+#X obj 171 19 inlet;
+#X obj 163 49 bng 50 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 52 170 line;
+#X obj 154 114 delay 10;
+#X msg 155 139 0 4000;
+#X obj 52 206 s dim;
+#X obj 284 85 f;
+#X obj 285 161 line;
+#X obj 304 56 r suit_dim;
+#X obj 285 197 s suit_dim;
+#X connect 0 0 1 1;
+#X connect 1 0 4 0;
+#X connect 2 0 3 0;
+#X connect 3 0 1 0;
+#X connect 3 0 5 0;
+#X connect 3 0 8 0;
+#X connect 4 0 7 0;
+#X connect 5 0 6 0;
+#X connect 6 0 4 0;
+#X connect 6 0 9 0;
+#X connect 8 0 9 0;
+#X connect 9 0 11 0;
+#X connect 10 0 8 1;
