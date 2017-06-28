@@ -1,4 +1,4 @@
-#N canvas 713 0 706 860 10;
+#N canvas -7 0 706 860 10;
 #X obj 152 247 bng 15 250 50 0 empty empty Start 17 7 0 10 -262144
 -1 -262144;
 #X msg 150 183 read Session3.txt;
@@ -46,6 +46,7 @@
 #X symbolatom 55 528 10 0 0 0 - - -, f 10;
 #X obj 186 404 note_color;
 #X obj 473 362 % 51;
+#X msg 218 213 read Session3_slow.txt;
 #X connect 0 0 2 0;
 #X connect 1 0 2 0;
 #X connect 3 0 4 0;
@@ -71,3 +72,4 @@
 #X connect 44 2 38 0;
 #X connect 44 3 40 0;
 #X connect 45 0 31 0;
+#X connect 46 0 2 0;
