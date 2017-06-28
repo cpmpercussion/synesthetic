@@ -8,7 +8,7 @@
 
 
 ADXL345 adxl = ADXL345();             // USE FOR I2C COMMUNICATION
-//int interruptPin = 2;                 // Setup pin 2 to be the interrupt pin (for most Arduino Boards)
+int interruptPin = D3;                 // Setup pin 2 to be the interrupt pin (for most Arduino Boards)
 
 char ssid[] = "NETGEAR50";          // your network SSID (name)
 char pass[] = "zanyocean960";                    // your network password
@@ -67,7 +67,7 @@ void setup(){
                                       // SPI pins on the ATMega328: 11, 12 and 13 as reference in SPI Library 
    
   adxl.setActivityXYZ(1, 0, 0);       // Set to activate movement detection in the axes "adxl.setActivityXYZ(X, Y, Z);" (1 == ON, 0 == OFF)
-  adxl.setActivityThreshold(75);      // 62.5mg per increment   // Set activity   // Inactivity thresholds (0-255)
+  adxl.setActivityThreshold(200);      // 62.5mg per increment   // Set activity   // Inactivity thresholds (0-255)
  
   adxl.setInactivityXYZ(1, 0, 0);     // Set to detect inactivity in all the axes "adxl.setInactivityXYZ(X, Y, Z);" (1 == ON, 0 == OFF)
   adxl.setInactivityThreshold(75);    // 62.5mg per increment   // Set inactivity // Inactivity thresholds (0-255)
@@ -79,7 +79,7 @@ void setup(){
   adxl.setTapThreshold(50);           // 62.5 mg per increment
   adxl.setTapDuration(15);            // 625 μs per increment
   adxl.setDoubleTapLatency(80);       // 1.25 ms per increment
-  adxl.setDoubleTapWindow(200);       // 1.25 ms per increment
+  adxl.setDoubleTapWindow(100);       // 1.25 ms per increment
  
   // Set values for what is considered FREE FALL (0-255)
   adxl.setFreeFallThreshold(7);       // (5 - 9) recommended - 62.5mg per increment
@@ -97,7 +97,8 @@ void setup(){
   adxl.doubleTapINT(1);
   adxl.singleTapINT(1);
   
-//attachInterrupt(digitalPinToInterrupt(interruptPin), ADXL_ISR, RISING);   // Attach Interrupt
+  pinMode(interruptPin, INPUT_PULLUP);
+  //attachInterrupt(digitalPinToInterrupt(interruptPin), ADXL_ISR, RISING);   // Attach Interrupt
 
 }
 
