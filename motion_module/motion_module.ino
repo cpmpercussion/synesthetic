@@ -19,6 +19,7 @@ WiFiUDP Udp;
 // 192.168.1.7 boot ethernet
 // 192.168.1.6 heimskringla
 const IPAddress outIp(192, 168, 1, 7);     // remote IP (not needed for receive)
+const IPAddress heimskringla(192, 168, 1, 6);
 const unsigned int outPort = 9999;          // remote port to receive OSC
 char hostString[16] = {0};
 const unsigned int localPort = 8888;        // local port to listen for UDP packets (here's where we send the packets)
@@ -122,6 +123,9 @@ void loop(){
   msg.add(y);
   msg.add(z);
   Udp.beginPacket(outIp, outPort);
+  msg.send(Udp);
+  Udp.endPacket();
+  Udp.beginPacket(heimskringla, outPort);
   msg.send(Udp);
   Udp.endPacket();
   msg.empty();
