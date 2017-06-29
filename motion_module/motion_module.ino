@@ -15,9 +15,10 @@ char pass[] = "zanyocean960";                    // your network password
 
 WiFiUDP Udp;
 // 192.168.1.4 determinist
-// 192.168.1.9 boot
+// 192.168.1.9 boot wifi
+// 192.168.1.7 boot ethernet
 // 192.168.1.6 heimskringla
-const IPAddress outIp(192, 168, 1, 9);     // remote IP (not needed for receive)
+const IPAddress outIp(192, 168, 1, 7);     // remote IP (not needed for receive)
 const unsigned int outPort = 9999;          // remote port to receive OSC
 char hostString[16] = {0};
 const unsigned int localPort = 8888;        // local port to listen for UDP packets (here's where we send the packets)
