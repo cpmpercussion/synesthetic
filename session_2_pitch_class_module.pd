@@ -1,5 +1,5 @@
-#N canvas 615 22 704 497 10;
-#N canvas 20 79 657 651 pitch-tracking 0;
+#N canvas 602 68 704 497 10;
+#N canvas 20 79 657 651 pitch-tracking 1;
 #X obj 113 9 adc~;
 #X floatatom 171 122 5 0 0 0 - - -, f 5;
 #X obj 173 148 - 36;
@@ -18,7 +18,7 @@
 #X connect 6 3 5 0;
 #X restore 103 62 pd pitch-tracking;
 #X obj 363 46 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 9388 1;
 #X obj 108 184 detect_pitch_class;
 #X obj 69 297 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
@@ -66,14 +66,17 @@
 #X msg 349 269 41 255 255;
 #X msg 365 97 \$1 1000;
 #X obj 424 147 hsl 128 15 0 255 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 31 1;
+-1 -1 7386 1;
 #X msg 186 274 0 110 20, f 12;
 #X obj 422 417 rand_fader;
 #X obj 192 416 rand_fader;
 #X obj 349 421 rand_fader;
+#X floatatom 306 71 5 0 0 0 - - -, f 5;
+#X obj 367 12 sqrt;
 #X connect 0 0 2 0;
-#X connect 0 1 1 0;
+#X connect 0 1 41 0;
 #X connect 1 0 14 0;
+#X connect 1 0 40 0;
 #X connect 2 0 3 0;
 #X connect 2 1 6 0;
 #X connect 2 2 7 0;
@@ -120,3 +123,4 @@
 #X connect 37 0 13 0;
 #X connect 38 0 10 0;
 #X connect 39 0 12 0;
+#X connect 41 0 1 0;
