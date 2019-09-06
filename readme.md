@@ -1,6 +1,18 @@
 # Synesthetic Performance Modules
 
-Synesthetic is an artistic project for percussion, electronics, composition, and lighting based in Oslo, Norway.
+Synesthetic is an artistic project for percussion, electronics, composition, and lighting based in Oslo, Norway. This repository contains microcontroller code and Pd patches that formed part of the performance.
+
+## Documentation
+
+The initial performance documentation can be found here:
+
+- [Session 1](https://youtu.be/F9IcC7vv4QQ)
+- [Session 2](https://youtu.be/im4Lcvku-Mg)
+- [Session 3](https://youtu.be/qwPCjI-jpZo)
+- [Session 4](https://youtu.be/nXD6IRKUPYI)
+- [Session 5](https://youtu.be/7AdijjhiiCI)
+
+More information is on the website: [synesthetic.blog](https://synesthetic.blog)
 
 ## Exposé:
 
